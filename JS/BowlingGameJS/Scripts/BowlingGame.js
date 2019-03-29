@@ -1,14 +1,14 @@
 ﻿// BowlingGame.js
 (function (window) {
-    _score = 0;
+    var currentScore = 0;
 
     function roll(pins) {
-        _score += pins;
-    };
+        currentScore += pins;
+    }
 
     function score() {
-        return _score;
-    };
+        return currentScore;
+    }
 
     window.roll = roll;
     window.score = score;

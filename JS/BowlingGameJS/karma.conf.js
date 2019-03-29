@@ -5,18 +5,18 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: "",
 
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ["jasmine"],
 
 
     // list of files / patterns to load in the browser
       files: [
-            'Specs/*.js',
-            'Scripts/*.js'
+            "Specs/*.js",
+            "Scripts/*.js"
     ],
 
 
@@ -34,7 +34,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'dots', 'htmlDetailed','mocha'],
+    reporters: ["progress", "dots", "htmlDetailed","mocha"],
 
 
     // web server port
@@ -56,7 +56,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'ChromeHeadless', 'PhantomJS'],
+    browsers: ["Chrome", "ChromeHeadless", "PhantomJS"],
 
 
     // Continuous Integration mode
@@ -69,12 +69,12 @@ module.exports = function(config) {
 
     // notify karma of the available plugins
     plugins: [
-    'karma - jasmine',
-    'karma - ktml - detailed - reporter',
-    'karma - mocha - reporter',
-    'karma - chrome - launcher',
-    'karma - phantomjs - launcher',
-    'karma - coverage'
+    "karma - jasmine",
+    "karma - ktml - detailed - reporter",
+    "karma - mocha - reporter",
+    "karma - chrome - launcher",
+    "karma - phantomjs - launcher",
+    "karma - coverage"
       ],
 
     // configure the HTML-detailed-reporter to put all results in one file
